@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.music-player {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.album-art {
+    margin-bottom: 20px;
+}
+
+.album-art img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.controls button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.controls button:active {
+    transform: scale(0.9);
+}
+
+.controls button i {
+    pointer-events: none;
+}
+
+.music-info {
+    margin-top: 20px;
+}
+
+#title, #artist {
+    display: block;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#title {
+    font-weight: bold;
+}
