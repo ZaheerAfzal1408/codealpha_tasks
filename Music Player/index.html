@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="music-player">
-        <div class="album-art">
-            <img id="album-img" alt="Album Art">
+    <div class="container">
+        <div class="music-player">
+            <div class="album-art">
+                <img id="album-img" alt="Album Art">
+            </div>
+            <audio id="audio"></audio>
+            <div class="controls">
+                <button id="prev"><i class="fas fa-backward"></i>Previous</button>
+                <button id="play-pause"><i class="fas fa-play"></i>Play</button>
+                <button id="next"><i class="fas fa-forward"></i>Next</button>
+            </div>
+            <div class="music-info">
+                <span id="title">Song Title</span>
+                <span id="artist">Artist Name</span>
+            </div>
         </div>
-        <audio id="audio"></audio>
-        <div class="controls">
-            <button id="prev"><i class="fas fa-backward"></i>Previous</button>
-            <button id="play-pause"><i class="fas fa-play"></i>Play</button>
-            <button id="next"><i class="fas fa-forward"></i>Next</button>
-        </div>
-        <div class="music-info">
-            <span id="title">Song Title</span>
-            <span id="artist">Artist Name</span>
+        <div class="songlist-container">
+            <div class="songlist" id="song-list">
+                <div class="songlist-header">
+                    <span>Song Name</span>
+                    <span class="artist-name">Artist Name</span>
+                </div>
+                <!-- Song list -->
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
